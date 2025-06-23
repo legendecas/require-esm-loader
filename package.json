@@ -1,0 +1,8 @@
+{
+  "type": "module",
+  "scripts": {
+    "test:esm-loader": "node --import ./register.js test-esm-loader.js",
+    "test:esm-loader-sync": "node --import ./register-sync.js test-esm-loader.js",
+    "test:package": "node test-package.js"
+  }
+}

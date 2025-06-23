@@ -1,0 +1,1 @@
+console.log('Loaded TS with a loader');
