@@ -26,6 +26,7 @@ ESM-only package | N | Y
 CJS-only package | Y | N
 Dual-export package | Y | Y
 "module-sync" package | Y | Y
+"default" package | Y | Y
 
 For packages with only `import` entrypoints in `package.json#exports`, `require(esm)`
 can not be used to load. For frameworks, there is no way to uniformly load a package.
@@ -33,7 +34,8 @@ Vice-versa for `require` only entrypoint packages.
 
 The available two options are:
 1. Define dual-exports,
-2. Define a "module-sync" entrypoint.
+2. Define a "module-sync" entrypoint,
+3. Always use "default" entrypoint.
 
 Non-dual package entrypoints:
 - `@hyperse/ts-node/register`: ESM only
